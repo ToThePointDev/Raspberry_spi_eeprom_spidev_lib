@@ -1,4 +1,4 @@
-#SPI EEPROM Access Library for RaspberryPi based on spidev_lib
+# SPI EEPROM Access Library for RaspberryPi based on spidev_lib
 
 Started from the nopnop2002 / Raspberry-spi-eeprom project, but that used one the wiringPi lib which no longer exist.
 This now uses spidev_lib and contains those files so it has no dependencies that might disappear in some dark future.
