@@ -2,8 +2,11 @@
 
 Started from the nopnop2002 / Raspberry-spi-eeprom project, but that used one the wiringPi lib which no longer exist.
 This now uses spidev_lib and contains those files so it has no dependencies that might disappear in some dark future.
+
 And the code has been cleaned up a bit with error handling, timeouts, ... 
+
 I only used it with an M95640.
+
 Use at your own risk, I just needed something quick to read and write that eeprom. 
 
 ---
