@@ -19,7 +19,8 @@ There are several variations in the M95 series.
 2.5 V to 5.5 V for M95xxx-W   
 1.8 V to 5.5 V for M95xxx-R   
 
-__M95xxx don't work with Raspberry Pi__
+For the > 4.5V version you will likely need to add a level shifter as the GPIO's of the pi are 3v3 
+(though it might be juuust high enough for the chip to detect them, it is for sure a bit dodgy)  
 
 |Device|# of Bits|# of Bytes|Byte Address range|Page Size(Byte)|Page Address Range|
 |:---|:---|:---|:---|:---|:---|
@@ -112,6 +113,8 @@ To read the contents of a connected eeprom and write it to an output file conten
 ./main -o contents.bin 
 
 To write the contents to a connected EEPROM from an input file contents.bin
-./main -i contents.bin 
+./main -i contents.bin
 
 ```
+
+For a demo on how I used it to reset my airbag fault codes, see https://www.youtube.com/watch?v=igxfvGu9VB0
